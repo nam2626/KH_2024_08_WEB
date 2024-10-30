@@ -3,3 +3,5 @@
 `h1~h6, hr, p, b, string, i, em, u, ins, &nbsp;, &copy, ol, ul, li`
 ## 하이퍼링크, 이미지, 동영상, 오디오
 `a, img, video, audio`
+## 테이블(표), iframe, 기타
+`table, tr, td, thead, tbody, tfoot, figure, figcaption, blockquote, pre`
