@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 400px;
+            height: 400px;
+            padding: 50px;
+            border:20px dashed black;
+            /* background-color: orange; */
+            background-image: url('/resource/img/halloween.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+             /* 
+              background-clip은 배경을 채우는 영역을 지정
+              border-box : border까지 채움 (배경이미지는 제외)
+              padding-box : padding까지 채움
+              content-box : content까지 채움
+            */
+            background-clip: border-box;
+        }
+        /* 클리핑 마스크 테스트*/
+        .clip_text{
+            font-size: 2em;
+            font-weight: bold;
+            color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body>
+     <!--가로 세로 400px, padding : 50px, border 20px dashed box 하나 작업-->
+     <div></div>
+     <hr>
+     <div class="clip_text">
+         글자 투명화 테스트<br>
+         글자 투명화 테스트<br>
+         글자 투명화 테스트<br>
+         글자 투명화 테스트<br>
+         글자 투명화 테스트<br>
+     </div>
+</body>
+</html>
