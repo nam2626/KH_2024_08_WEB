@@ -22,7 +22,42 @@
         font-size: 1.5em;
         font-weight: bold;
       }
-    
+      /* 
+        flex-direction
+          row : 기본값, 왼쪽에서 오른쪽으로 배치
+          row-reverse : 오른쪽에서 왼쪽으로 배치
+          column : 위에서 아래로 배치
+          column-reverse : 아래에서 위로 배치
+      */
+      .flex_row{
+        border:1px solid blue;
+        display: flex;
+        flex-direction: row;
+        /* 간격 : 줄간격 열간격 */
+        gap : 0px 10px;
+        margin:20px 0px;
+      }
+      .flex_row_reverse{
+        border:1px solid blue;
+        display: flex;
+        flex-direction: row-reverse;
+        gap : 0px 10px;
+        margin:20px 0px;
+      }
+      .flex_column{
+        border:1px solid blue;
+        display: flex;
+        flex-direction: column;
+        gap : 10px 0px;
+        margin:20px 0px;
+      }
+      .flex_column_reverse{
+        border:1px solid blue;
+        display: flex;
+        flex-direction: column-reverse;
+        gap : 10px 0px;
+        margin:20px 0px;
+      }
     </style>
   </head>
   <body>
