@@ -8,7 +8,42 @@
         body{
             height: 5000px;
         }
-      
+      /* 
+            Grid(그리드)
+                - 그리드는 행과 열로 이루어진 2차원 레이아웃 시스템
+                - 그리드는 행과 열을 이용해서 요소들을 정렬
+      */
+        .item{
+            padding:50px;
+            border:1px solid black;
+            font-size: 1.5em;
+        }
+        .container1{
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: minmax(150px, auto);
+        }
+        .container2{
+            display: grid;
+            grid-template-columns: 1fr 2fr 3fr;
+            grid-template-rows: minmax(150px, auto);
+        }
+        .container3{
+            display: grid;
+            grid-template-columns: repeat(5, minmax(100px,1fr));
+        }
+        .container4{
+            display: grid;
+            width: 1200px;
+            border: 1px solid red;
+            grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+        }
+        .container5{
+            display: grid;
+            width: 1200px;
+            border: 1px solid red;
+            grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
+        }
     </style>
 </head>
 <body>
