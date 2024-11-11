@@ -42,6 +42,23 @@
         text-decoration: none;
         font-size: 1.4em;
        }
+       section{
+        grid-column: 1 / span 6;
+       }
+       article{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        column-gap: 10px;
+       }
+       .article_title{
+        grid-column: 1 / span 6;
+       }
+       img {
+         width: 100%;
+       }
+       .item:first-of-type{
+        margin-left: 10px;
+       }
     </style>
 </head>
 <body>
