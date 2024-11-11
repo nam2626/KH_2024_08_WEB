@@ -14,7 +14,25 @@
             height: 100px;
             border: 1px solid black;
         }
-    
+        /* 
+            position
+                static : 기본값, 원래 위치 순서상 자연스럽게 배치
+                absolute : 부모 요소를 기준으로 이동
+                fixed : 브라우저 기준으로 이동
+                relative : 원래 있던 자리를 기준으로 이동
+
+            top, left, right, bottom : 위치를 지정
+        */
+        .absolute{
+            top : 50px;
+            left: 100px;
+            position: absolute;
+        }
+        .fixed{
+            bottom: 100px;
+            right: calc(50% - 51px);
+            position: fixed;
+        }
     </style>
 </head>
 <body>
