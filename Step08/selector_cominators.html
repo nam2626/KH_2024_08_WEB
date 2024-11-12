@@ -155,8 +155,41 @@
         .container1 > p:last-of-type{
             text-decoration: line-through;
         }
-
-        
+         /* 원하는 n번째 자식 요소만 선택 */
+        .container1 > p:nth-child(3){
+            text-decoration: line-through dashed;
+        }
+        /* 홀수/짝수 번째 자식 요소 선택 */
+        .container1 > p:nth-child(2n){
+            background-color: gold;
+        }
+        .container1 > p:nth-child(2n+1){
+            background-color: greenyellow;
+        }
+        /* 무리별로 해당 순번에 있는 요소 선택 */
+        .container1 > p:nth-of-type(3){
+            font-style: italic;
+        }
+        /* 3번째 요소 이후에 있는 모든 p 태그 선택 */
+        .container1 > p:nth-of-type(3) ~ p{
+            font-weight: bold;
+        }
+        /* placeholder 디자인 적용 */
+        input::placeholder{
+            color: blueviolet;
+            font-weight: bold;
+        }
+        /* 선택한 요소의 마지막에 내용을 추가하는 CSS */
+        .after li::after{
+            content: "← 다음 줄로";
+            color : cornflowerblue;
+            text-decoration: underline;
+        }
+        /* 선택한 요소의 맨앞에 내용을 추가하는 CSS */
+        .after li::before{
+            content: "시작 내용 : ";
+            color:tomato;
+        }
     </style>
 </head>
 <body>
