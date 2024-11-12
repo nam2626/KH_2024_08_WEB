@@ -93,11 +93,70 @@
             text-decoration: line-through;
          }
         /*  h2에 마우스가 올라가면 밑줄이 나타나게끔 처리  */
-
+         h2:hover{
+            text-decoration: underline;
+         }
         /* ul에 마우스가 올라가면 원하는 배경색이 나오게끔 처리 */
-
+         ul:hover{
+            background-color: chartreuse;
+         }
         /* ol 태그의 자식 li에 마우스가 올라갔을때 원하는 배경색이 나오게끔 처리 */
+         ol > li:hover{
+            background-color: chocolate;
+         }
+         /* 마우스 클릭 했을때 */
+         a:active{
+            background-color: blue;
+         }
+         /* 해당 태그가 선택이 되었때 */
+         input:focus{
+            background-color: darkcyan;
+            outline: none;
+         }
+         /* disabled : 비활성화된 상태 */
+         input:disabled{
+            background-color: red !important;
+         }
+         /* 읽기 전용 */
+        input:read-only{
+            border: 2px solid blue;
+            background-color: bisque;
+        }
+        /* 반드시 입력해야하는 경우 */
+        input:required{
+            border: 2px solid brown;
+        }
 
+        /* 체크박스(라디오버튼)가 체크된 상태 */
+        #chk:checked{
+            width: 100px;
+            height: 100px;
+        }
+        #chk:checked+label{
+            background-color: chocolate;
+        }
+
+        /* 
+            첫번째 자식 요소만 선택
+                선택된 태그가 첫번째 자식일 경우만 선택
+        */
+        .container1 > p:first-child{
+            color:crimson;
+        }
+        /* 선택된 그룹별 태그 중 첫번째 것만 선택*/
+        .container1 > p:first-of-type{
+            text-decoration: underline;
+        }
+        /* 선택된 태그가 마지막 자식일 경우만 선택 */
+        .container1 > p:last-child{
+            color:blueviolet;
+        }
+        /* 선택된 그룹별 태그 중 마지막 것만 선택 */
+        .container1 > p:last-of-type{
+            text-decoration: line-through;
+        }
+
+        
     </style>
 </head>
 <body>
@@ -167,6 +226,7 @@
 
     </p>
     <div class="container1">
+        <h2>서브 제목</h2>
         <p>모든 국민은 그 보호하는 자녀에게 적어도 초등교육과 법률이 정하는 교육을 받게 할 의무를 진다.</p>
         <p>누구든지 체포 또는 구속을 당한 때에는 즉시 변호인의 조력을 받을 권리를 가진다. 다만, 형사피고인이 스스로 변호인을 구할 수 없을 때에는 법률이 정하는 바에 의하여 국가가 변호인을 붙인다.
         </p>
