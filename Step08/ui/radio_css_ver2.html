@@ -15,8 +15,11 @@
       box-sizing: border-box;
       background-clip: content-box;
     }
-    .checked{
-     background-color: orange; 
+    input{
+      display: none;
+    }
+    input:checked + label > .radio{
+      background-color: orange; 
     }
   </style>
 </head>
