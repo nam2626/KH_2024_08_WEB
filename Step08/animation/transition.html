@@ -13,6 +13,7 @@
             /* transition-property: background-color, border; */
             transition-property: all;
             /* transition-delay: 5s; */
+            /* transition-timing-function: linear; */
         }
 
         .box1:hover{
@@ -24,6 +25,8 @@
             width: 200px;
             height: 200px;
             border: 5px solid black;
+            /* property duration timing-function delay */
+            transition: all 1s steps(5, end) 5s;
         }
         .box2:hover{
             background-color: red;
